@@ -19,7 +19,7 @@ app.get("/api/data/:name?", async (req, res) => {
 
   try {
     // If the 'name' filter is provided, proceed with fetching data
-    const apiUrl = `https://leger.rahulluthra.in/api/tasks/d?name=${encodeURIComponent(
+    const apiUrl = `https://ledger.amanluthra.com/api/tasks/d?name=${encodeURIComponent(
       name
     )}`;
     const response = await axios.get(apiUrl);
